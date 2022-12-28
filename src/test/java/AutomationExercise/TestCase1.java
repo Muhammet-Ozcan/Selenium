@@ -49,7 +49,7 @@ public class TestCase1 {
         WebElement EnterAccountDisplayed =driver.findElement(By.xpath("//*[text()='Enter Account Information']"));
         Assert.assertTrue(EnterAccountDisplayed.isDisplayed());
     //9. Fill details: Title, Name, Email, Password, Date of birth
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("145301.Mk");
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("79874.km");// kendi şahsi şifrem olduğu için random bir şifre atadım kendi gmail ve şifrenizi girerseniz Test Passed olacaktır.
         driver.findElement(By.xpath("(//input[@type='radio'])[1]")).click();
 
         WebElement day = driver.findElement(By.xpath("//select[@data-qa='days']"));

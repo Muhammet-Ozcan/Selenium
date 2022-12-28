@@ -59,7 +59,7 @@ public class Test02 {
         String mesajGorundu =mesaj.getText();
         Thread.sleep(3000);
         boolean displayed =mesaj.isDisplayed();
-        if (displayed){
+        if (displayed){                                                                        //That's it
             System.out.println(mesajGorundu+"\t TEST PASSED");
         }else{
             System.out.println("MESAJ GORUNTÜLENEMDİ TEST FAIELD");
