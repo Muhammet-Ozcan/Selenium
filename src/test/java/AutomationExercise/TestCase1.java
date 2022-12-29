@@ -42,7 +42,7 @@ public class TestCase1 {
         Assert.assertTrue(newUserSignup.isDisplayed());
     //6. Enter name and email address
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Muhammet");
-        driver.findElement(By.xpath("//*[@data-qa='signup-email']")).sendKeys("ozcanmuhammet298@gmail.com");
+        driver.findElement(By.xpath("//*[@data-qa='signup-email']")).sendKeys("BlackGhost@gmail.com");
     //7. Click 'Signup' button
         driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
     //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
@@ -100,13 +100,21 @@ public class TestCase1 {
    Select select3 = new Select(country);
 
     //13. Click 'Create Account button'
-     driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
+    driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
     //14. Verify that 'ACCOUNT CREATED!' is visible
-
+    WebElement accountCratted  = driver.findElement(By.xpath("//*[text()='Account Created!']"));
+    Assert.assertTrue(accountCratted.isDisplayed());
     //15. Click 'Continue' button
+    driver.findElement(By.xpath("//*[text()='Continue']")).click();
+
     //16. Verify that 'Logged in as username' is visible
+    WebElement userNamevisible     =driver.findElement(By.xpath("//*[text()='Muhammet']"));
+    Assert.assertTrue(userNamevisible.isDisplayed());
     //17. Click 'Delete Account' button
+      driver.findElement(By.xpath("(//*[@style='color:brown;'])[2]")).click();
     //18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+      WebElement accountDeleted =driver.findElement(By.xpath("//*[text()='Account Deleted!']"));
+     Assert.assertTrue(accountDeleted.isDisplayed());
 
 
 
