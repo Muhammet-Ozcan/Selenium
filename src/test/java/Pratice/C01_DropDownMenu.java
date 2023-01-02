@@ -1,4 +1,4 @@
-package Day01_Pratice1;
+package Pratice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.*;
