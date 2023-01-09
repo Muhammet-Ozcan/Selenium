@@ -14,7 +14,9 @@ public class C01_FileUpload extends TestBase {
         //chooseFile butonuna basalim
         WebElement chooseFileButton = driver.findElement(By.xpath("//*[@id='file-upload']"));
         //Yuklemek istediginiz dosyayi secelim.
-        String path = "\"C:\\Users\\Black\\Desktop\\logo.jpeg\"";
+        String path = System.getProperty("user.home")+"\\Desktop\\logo.jpeg";
+        String path2 = "C:\\Users\\Black\\Desktop\\logo.jpeg";
+        String path3 ="C:\\Users\\Black\\Desktop\\logo.jpeg";
         //Upload butonuna basalim.
         chooseFileButton.sendKeys(path);
         //“File Uploaded!” textinin goruntulendigini test edelim.

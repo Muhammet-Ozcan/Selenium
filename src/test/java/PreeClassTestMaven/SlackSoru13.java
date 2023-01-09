@@ -32,7 +32,7 @@ public class SlackSoru13 extends TestBase {
         //7. "Click and hold" kutusunda cikan yaziyi yazdirin
         System.out.println("clickAndHoldPrint = " + clickAndHold.getText());
         //8. "Double click me" butonunu cift tiklayin
-        WebElement doubleClickMeButton = driver.findElement(By.xpath("//*[text()='Double Click Me!']"));
+        WebElement doubleClickMeButton = driver.findElement(By.id("double-click"));
         waitFor(1);
         actions.doubleClick(doubleClickMeButton).perform();
 
