@@ -62,7 +62,7 @@ public class SlackSoru14 extends TestBase {
     //Test03
     //yeni bir sekme açarak amazon anasayfaya gidin
 
-    @Ignore
+    @Test
     public void example3(){
         driver.get("https://www.amazon.com");
         WebElement dropDown = driver.findElement(By.id("searchDropdownBox"));
